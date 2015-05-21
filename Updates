@@ -1,0 +1,12 @@
+5/20/2015
+  -Created the database for the project
+    -Create the inventory table. Layout is as follows:
+      +----------------+--------------+------+-----+---------+----------------+
+      | Field          | Type         | Null | Key | Default | Extra          |
+      +----------------+--------------+------+-----+---------+----------------+
+      | item_num       | int(6)       | NO   | PRI | NULL    | auto_increment |
+      | item_name      | char(20)     | NO   |     | NULL    |                |
+      | sellable_count | int(3)       | YES  |     | NULL    |                |
+      | physical_count | int(3)       | YES  |     | NULL    |                |
+      | price          | decimal(6,2) | YES  |     | NULL    |                |
+      +----------------+--------------+------+-----+---------+----------------+
