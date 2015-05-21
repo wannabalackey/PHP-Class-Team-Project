@@ -1,4 +1,8 @@
-##Learn to use github: 
+#Guitar Shop Team Project
+
+---
+
+###Learn to use github: 
 
     https://github.com/codeschool
 
@@ -8,7 +12,7 @@
     - Wishlist
     - Raincheck
     
-#Ch24\_guitar\_shop project
+#Ch24\_guitar\_shop project.docx
 
 ch24 guitar shop is a multi person project.
 
@@ -65,3 +69,39 @@ A shipped item from the Second Part will deplete the actual inventory and pendin
 **Something to think about**
 
 To finish the cycle -  You may want to think about ordering the product and increasing inventory levels.
+
+
+#Ch24 guitar shop NOTES.docx	
+
+#####Make following changes to allow “www/book_apps/ch24_guitar_shop” problem to work properly  in PHP
+
+######Comment out any “util/secure_conn.php” or  “/util/valid_admin.php” in the follow index.php files in the following folders
+     - Checkout
+     - Account 
+     - Admin and these subfolders in Admin
+          - Account
+          - Category
+          - Orders
+          - Product
+
+**PHP NOTES VERY IMPORTANT!!!!!!!**
+
+- Netbeans Debug will only work with applications that have an INDEX.PHP file in root folder.
+
+- Clear the browsers files when your changes you are making to the PHP application are not showing on the execution.
+
+#####If your Murach PHP applications screens align to the left and not in the middle of the page, you may need to:
+
+- Make sure your `Properties > Run Configurations` project URL is calling the correct application 
+
+- **Example:** `http://localhost/ch24_guitar_shop/`
+
+- Open the `util/main.php` file and edit it so the app path has the correct number of directories to the URL application: In the case of above 
+
+- **Example:** 
+`http://localhost/ch24_guitar_shop/. 
+$app_path = '/' . $dirs[1] . '/';`
+
+- **In the following case example: **
+`http://localhost/book_apps/ch24_guitar_shop/
+$app_path = '/' . $dirs[1] . '/' . $dirs[2] . '/';`
